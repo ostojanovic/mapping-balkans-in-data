@@ -5,7 +5,7 @@ from utils import load_data
 from matplotlib import pyplot as plt
 plt.style.use("ggplot")
 
-countries = ["albania", "bosnia_and_herzegovina", "croatia", "kosovo", "macedonia", "montenegro", "serbia", "slovenia"]
+countries = ["albania", "bosnia_and_herzegovina", "croatia", "kosovo*", "montenegro", "northern_macedonia", "serbia", "slovenia"]
 countries_ticks = pd.DataFrame(["ALB", "BIH", "CRO", "XK", "MNE", "FYROM", "SRB", "SLO"])
 colors = ["firebrick", "mediumblue", "palevioletred", "darkviolet", "darkorange", "seagreen", "sienna", "darkolivegreen"]
 

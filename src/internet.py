@@ -5,11 +5,11 @@ from utils import load_data
 from matplotlib import pyplot as plt
 plt.style.use("ggplot")
 
-countries = ["albania", "bosnia_and_herzegovina", "croatia", "kosovo", "macedonia", "montenegro", "serbia", "slovenia"]
+countries = ["albania", "bosnia_and_herzegovina", "croatia", "kosovo*",  "montenegro", "northern_macedonia", "serbia", "slovenia"]
 countries_ticks = pd.DataFrame(["ALB", "BIH", "CRO", "XK", "MNE", "FYROM", "SRB", "SLO"])
 
 for country in countries:
-    data = pd.read_csv("/home/olivera/Documents/side/{}/{}.csv".format(country,country),sep=",",index_col=0)
+    data = pd.read_csv("../data/{}/{}.csv".format(country,country),sep=",",index_col=0)
     data = data.transpose()
     var = data.iloc[:,data.columns=="Individuals using the Internet (% of population)"].dropna()
     print(var)

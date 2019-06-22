@@ -16,7 +16,7 @@ women_abuse5 = []
 women_abuse6 = []
 
 for country in countries:
-    data = pd.read_csv("/home/olivera/Documents/side/{}/{}.csv".format(country,country),sep=",",index_col=0)
+    data = pd.read_csv("../data/{}/{}.csv".format(country,country),sep=",",index_col=0)
     data = data.transpose()
 
     abuse1 = data.iloc[:,data.columns == "Women who believe a husband is justified in beating his wife when she refuses sex with him (%)"].dropna()

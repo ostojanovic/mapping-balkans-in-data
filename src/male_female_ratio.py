@@ -4,7 +4,7 @@ import numpy as np
 from matplotlib import pyplot as plt
 plt.style.use("ggplot")
 
-countries = ["albania", "bosnia_and_herzegovina", "croatia", "macedonia", "montenegro", "serbia", "slovenia"]
+countries = ["albania", "bosnia_and_herzegovina", "croatia", "montenegro", "northern_macedonia", "serbia", "slovenia"]
 
 male_female_ratio = []
 for country in countries:

@@ -4,7 +4,7 @@ from matplotlib import pyplot as plt
 plt.style.use("ggplot")
 
 country = "serbia"
-data = pd.read_csv("/home/olivera/Documents/side/{}/{}.csv".format(country,country),sep=",",index_col=0)
+data = pd.read_csv("../data/{}/{}.csv".format(country,country),sep=",",index_col=0)
 data = data.transpose()
 
 tractors = data.iloc[:,data.columns=="Agricultural machinery, tractors"].dropna()
