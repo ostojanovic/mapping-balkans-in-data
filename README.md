@@ -1,5 +1,5 @@
 # mapping-balkans-in-data
-Code for my side project: "Mapping Balkans in data". 
+Code for my project: "Mapping Balkans in data". 
 
 My goal is to look at different sociological, geographical and infrastructure factors, make good data visualizations and then apply couple of machine learning methods to predict, for example, immigrations/emmigrations, trends in education, travelling etc. The data is downloaded from [The World Bank][1]. 
 
